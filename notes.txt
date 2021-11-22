@@ -11,3 +11,10 @@ mongoimport --host cluster0-shard-00-01.ogshn.mongodb.net:27017 --db api001 --co
 
 
 mongoimport --db api001 --collection users100 --type json --file users100.json --jsonArray
+
+----------------------------------------------------------------
+
+mongodb+srv://gast_user:1978@cluster0.d4z7v.mongodb.net
+
+                   cluster0-shard-00-02.d4z7v.mongodb.net:27017
+mongoimport --host cluster0-shard-00-02.d4z7v.mongodb.net:27017 --db api001 --collection users100 --type json --file users100.json --jsonArray --authenticationDatabase admin --ssl --username gast_user
