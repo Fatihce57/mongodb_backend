@@ -57,7 +57,7 @@ app.post('/insertuser', (req, res) => {
   })
 })
 
-app.patch('/edituseremail/:id', (req, res) => {
+app.patch('/edituser/:id', (req, res) => {
   const id = req.params.id
   const email = req.body.email
   console.log(email)
