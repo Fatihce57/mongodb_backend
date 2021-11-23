@@ -47,7 +47,7 @@ app.delete('/deleteuser/:id', (req, res) => {
   })
 })
 
-app.post('/adduser', (req, res) => {
+app.post('/insertuser', (req, res) => {
   const user = req.body.user
   execMongo(async (db) => {
     const insertResult = await db.collection('users100').insertOne(user)
@@ -57,7 +57,7 @@ app.post('/adduser', (req, res) => {
   })
 })
 
-app.patch('/edituser/:id', (req, res) => {
+app.patch('/edituseremail/:id', (req, res) => {
   const id = req.params.id
   const email = req.body.email
   console.log(email)
